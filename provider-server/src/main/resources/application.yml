@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+
+
+#  配置dubbo属性
+dubbo:
+  application:
+    name: provider-server  # 服务应用名字
+  registry:
+    address: zookeeper://127.0.0.1:2181  # 注册中心地址
+  scan:
+    base-packages: com.cdd.service  # 哪些服务要被注册
+
+
+
